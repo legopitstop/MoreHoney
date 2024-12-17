@@ -1,0 +1,54 @@
+{
+    "format_version": "1.19.40",
+    "minecraft:block": {
+        "description": {
+            "identifier": "morehoney:honey_press",
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.search"
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/morehoney/blocks/honey_press.json",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
+            },
+            "minecraft:unit_cube": {},
+            "minecraft:crafting_table": {
+                "crafting_tags": [
+                    "honey_press"
+                ],
+                "table_name": "container.honey_press"
+            },
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "morehoney:honey_press_top",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "morehoney:honey_press_bottom",
+                    "render_method": "opaque"
+                },
+                "north": {
+                    "texture": "morehoney:honey_press_front",
+                    "render_method": "opaque"
+                },
+                "south": {
+                    "texture": "morehoney:honey_press_front",
+                    "render_method": "opaque"
+                },
+                "west": {
+                    "texture": "morehoney:honey_press_side",
+                    "render_method": "opaque"
+                },
+                "east": {
+                    "texture": "morehoney:honey_press_side",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}
